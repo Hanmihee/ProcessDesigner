@@ -1,0 +1,344 @@
+body {
+  font-size: 12px;
+  font-family: 돋움;
+}
+
+span.link {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #990000;
+}
+
+span.link a {
+  color: #990000 !important;
+}
+
+#top {
+  margin-bottom: 0;
+}
+
+#ctrl-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*#ctrl-nav li {
+    margin-left: 10px;
+    line-height: 2em;
+}*/
+
+#ctrl-nav ul.root > li > div {
+  cursor: pointer;
+[ ]
+}
+
+#ctrl-nav ul.root > li > ul {
+  display: none;
+}
+
+#ctrl-nav ul.root > li.active > ul {
+  display: inherit;
+}
+
+#contents {
+  overflow-x: auto;
+}
+
+#contents p {
+  margin-bottom: 10px;
+}
+
+#contents h3.dews-ui-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+#contents h4.dews-ui-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 0;
+  margin-bottom: 7px;
+}
+
+#contents h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contents h3 small {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  color: #ccc;
+}
+
+#contents h4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+#contents h4 small {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+#contents h4.api {
+  font-size: 15px;
+}
+
+#contents h4.api small {
+  margin-top: 0;
+}
+
+#contents .CodeMirror {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+div.well p.params {
+  color: #ccc;
+}
+
+div.well p.returns {
+  color: #ccc;
+}
+
+div.well p:last-child {
+  margin-bottom: 0 !important;;
+}
+
+div.well code.type::before {
+  content: '{'
+}
+
+div.well code.type::after {
+  content: '}'
+}
+
+div.well li {
+  list-style: circle;
+  margin-left: 15px;
+}
+
+div.well li code {
+  background-color: transparent;
+}
+
+div.well li.optional {
+  font-style: italic;
+}
+
+div.well li.optional::after {
+  content: '(생략가능)';
+}
+
+div.well dl {
+  margin: 16px 0 0 16px;
+}
+
+div.well dl dt {
+  display: list-item;
+  list-style-type: square;
+  font-weight: bold;
+}
+
+div.well dl dd {
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+ol li {
+  margin: 0 0 10px 16px;
+  display: list-item;
+  list-style: decimal inside;
+}
+
+code {
+  background-color: transparent !important;
+}
+
+#contents .screenshot {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contents .screenshot img {
+  max-width: 700px;
+}
+
+#formpanel .CodeMirror, #formpanel_validate .CodeMirror, #conditionpanel .CodeMirror, #conditionpanel_validate .CodeMirror, #conditionpanel_serialize .CodeMirror, #tabpanel_main .CodeMirror, #tabpanel_sub .CodeMirror, #tabpanel_text .CodeMirror, #tabpanel_disabled .CodeMirror, #tabpanel_changeSelectTab .CodeMirror {
+  height: 500px;
+}
+
+/* 모듈 아이콘 */
+.container.main.formal > #naves #nav-modules .module-item > .module-link.Components {
+  background-image: url(../images/m-ico-pu.png);
+}
+
+.container.main.formal > #naves #nav-modules .module-item > .module-link.Guidelines {
+  background-image: url(../images/m-ico-standard.png);
+}
+
+.container.main.formal > #naves #nav-modules .module-item > .module-link.Tutorials {
+  background-image: url(../images/m-ico-co.png);
+}
+
+.container.main.formal > #naves #nav-modules .module-item > .module-link.Requests {
+  background-image: url(../images/m-ico-outsourcing.png);
+}
+
+.container.main.formal > #naves #nav-modules .module-item > .module-link.Developments {
+  background-image: url(../images/m-ico-pm.png);
+}
+
+/* 테마 셀렉터 */
+#notification-area {
+  position: absolute ! important;
+  right: 55px !important;
+  width: auto !important;
+  z-index: 14;
+}
+#notification-area .dews-dropdownlist-wrapper {
+  display:inline-block;
+  width: 82px;
+}
+#notification-area .dews-dropdownlist-wrapper > .k-state-default{
+  height:23px !important;
+}
+#notification-area .dews-dropdownlist-wrapper > .k-state-default > *{
+  height: 21px !important;
+  line-height: 21px !important;
+}
+#themeSelectorWrapper > #themeSelector{
+  background: transparent;
+  height: 23px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-align-last: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#themeSelectorWrapper > #themeSelector::-ms-expand {
+  display: none;
+}
+#themeSelectorWrapper,
+#colorSelectorWrapper {
+  display: inline-block;
+}
+#themeSelectorWrapper > span ,
+#colorSelectorWrapper > span {
+  display:inline-block;
+  line-height:23px;
+  margin-right: 5px;
+}
+
+
+/*bootstrap 대체 스타일링*/
+/*가이드 박스 스타일*/
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.well.well-sm {
+  padding: 9px;
+  border-radius: 3px;
+}
+
+.text-primary {
+  color: #337ab7;
+}
+.well .text-danger {
+  color: #a94442;
+}
+.well .text-muted {
+  color: #777
+}
+.well .text-success {
+  color: #3c763d;
+}
+.well .text-info {
+  color: #31708f;
+}
+.well .text-warning {
+  color: #8a6d3b;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.well.well-sm ul, .well.well-sm ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.well.well-sm p {
+  margin: 0 0 10px 0;
+}
+
+/*가이드 제목 스타일*/
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+  font-weight: normal;
+  line-height: 1;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 10px;
+}
+
+
+/*가이드 테이블 스타일*/
+table.dews-table-info {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  color: #000;
+  border-collapse: collapse;
+
+}
+
+table.dews-table-info tr {
+  height: 30px;
+}
+
+table.dews-table-info tr.group-header th, table.dews-table-info tr.group-header td {
+  background-color: #e4eef6;
+  font-weight: bold;
+  padding: 5px 10px;
+  line-height: 19px;
+}
+
+table.dews-table-info th, table.dews-table-info td {
+  padding: 5px 10px;
+  line-height: 19px;
+  border: 1px solid #cdcdcd;
+}
